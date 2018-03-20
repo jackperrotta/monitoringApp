@@ -4,10 +4,12 @@
 <div class="container-fluid d-flex justify-content-center splashSection">
   <div class="row">
     <div class="col-lg-10 align-self-center text-center mx-auto">
-      <h1 style="font-weight: 800; color: yellow;">Improving Software License Management</h1>
-      <a role="button" class="btn btn-secondary btn-lg mt-4" href="#about">
-        Learn More
+      <a href="#about">
+      <img src="<?php echo $base_path;?>/img/logo.png" width="30%" height="30%" alt="">
       </a>
+      <!-- <a role="button" class="btn btn-secondary btn-lg mt-4" href="#about">
+        Learn More
+      </a> -->
     </div>
   </div>
 </div>
