@@ -20,7 +20,7 @@
       <p>The Marka app can be downloaded onto mobile phones, providing beachgoers with an opportunity to purchase digital beach passes prior to their visit to participating beaches.</p>
     </div>
     <div class="col-md-5">
-      <img class="img-fluid mx-auto" src="./img/nj-tag-locations.png" alt="Marka tags locations">
+      <img class="img-fluid mx-auto" src="./img/network.jpg" alt="Network connections">
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <?php include '../common/config.php';?>
 <?php include "../model/database.php"; ?>
-<?php include "../model/usersSharedDb.php"; ?>
+<?php include "../model/userSharedDb.php"; ?>
 <?php
 $message = "";
 $type = filter_input(INPUT_GET,'type');
@@ -54,7 +54,7 @@ if (isset($_POST['login']) && $type=='employee'){
     if ($userId){
         session_start();
         $_SESSION['LOGGED_IN']='OK';
-        header('Location: ../employees/index.php');
+        header('Location: ../employee/index.php');
         exit();
     } else
     {
@@ -64,8 +64,8 @@ if (isset($_POST['login']) && $type=='employee'){
     }
 }
 // Show registration page
-if ($status == 'register'){
-  include 'visitorRegister.php';
+if ($type == 'employee' && $status == 'register'){
+  include 'register.php';
   exit();
 };
 // Visitor Registration
@@ -75,15 +75,10 @@ if (isset($_POST['visitorRegister'])){
   $email = filter_input(INPUT_POST, 'email');
   $password = filter_input(INPUT_POST, 'password');
   $password2 = filter_input(INPUT_POST, 'password2');
-  $address = filter_input(INPUT_POST, 'address');
-  $address2 = filter_input(INPUT_POST, 'address2');
-  $city = filter_input(INPUT_POST, 'city');
-  $state = filter_input(INPUT_POST, 'state');
-  $zip = filter_input(INPUT_POST, 'zip');
   if($password == $password2) {
-    $success = addVisitor($fName, $lName, $email, $password, $address, $address2, $city, $state, $zip, $type);
+    $success = addVisitor($fName, $lName, $email, $password, $type);
     if ($success) {
-      $type = 'visitor';
+      $type = 'employee';
       $userId = loginUsers($email,$password,$type);
       if ($userId){
           session_start();
@@ -91,21 +86,15 @@ if (isset($_POST['visitorRegister'])){
           $_SESSION['type'] = $type;
           $_SESSION['id'] = $userId[0][id];
           $_SESSION['email'] = $email;
-          $_SESSION['fName'] = $userId[0][fName];
-          $_SESSION['lName'] = $userId[0][lName];
-          $_SESSION['address'] = $userId[0][address];
-          $_SESSION['address2'] = $userId[0][address2];
-          $_SESSION['city'] = $userId[0][city];
-          $_SESSION['state'] = $userId[0][state];
-          $_SESSION['zip'] = $userId[0][zip];
-          $_SESSION['groupId'] = $userId[0][GroupID];
-          header('Location: ../visitors/index.php');
+          // $_SESSION['fName'] = $userId[0][fName];
+          // $_SESSION['lName'] = $userId[0][lName];
+          header('Location: ../employee/index.php');
           exit();
     }
   }
   } else {
     $message = "<div class='alert alert-danger' role='alert'>Passwords don't match, Please try again.</div>";
-    include 'visitorRegister.php';
+    include 'register.php';
     exit();
   }
 };

@@ -3,7 +3,7 @@
 <div class="container" style="height: 70vh;">
   <div class="row mt-5">
     <div class="col-md-6 mx-auto text-center">
-      <img class="mb-3" src="../img/marka-logo.png" style="height: 150px; width: 150px;">
+      <img class="mb-3" src="../img/logo.png" style="height: 150px; width: 150px;">
       <form action="index.php?type=<?php echo $type?>" method="post">
         <h1 class="h3 mb-3 font-weight-normal text-capitalize"><?php echo $type;?> Login</h1>
         <div>
@@ -16,16 +16,16 @@
         <input type="password" id="password" name="password" class="form-control my-2" placeholder="Password" required>
         <div class="mt-3">
           <p>
-            <a href="<?php echo $base_path;?>/usersShared/index.php?type=visitor&status=register">
+            <a href="<?php echo $base_path;?>/usersShared/index.php?type=employee&status=register">
             Create Account
           </a> |
           <?php
             if($type == 'visitor'){
-              echo "<a href='" . $base_path . "/usersShared/index.php?type=employee&status=login'>
+              echo "<a href='" . $base_path . "/userShared/index.php?type=employee&status=login'>
               Employee Login
               </a>";
             } else{
-              echo "<a href='" . $base_path . "/usersShared/index.php?type=visitor&status=login'>
+              echo "<a href='" . $base_path . "/userShared/index.php?type=visitor&status=login'>
               Visitor Login
               </a>";
             }

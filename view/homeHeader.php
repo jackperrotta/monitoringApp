@@ -42,13 +42,13 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $base_path;?>/userShared/index.php?type=login">Login</a>
+          <a class="nav-link" href="<?php echo $base_path;?>/userShared/index.php?type=employee&status=login">Login</a>
         </li>
         <li class="nav-item d-sm-none d-md-none d-lg-block">
           <a class="nav-link disabled">|</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $base_path;?>/userShared/index.php?type=register">Register</a>
+          <a class="nav-link" href="<?php echo $base_path;?>/userShared/index.php?type=employee&status=register">Register</a>
         </li>
       </ul>
     </div>

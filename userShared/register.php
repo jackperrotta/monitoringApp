@@ -7,7 +7,7 @@
       <form action="index.php?type=<?php echo $type;?>" method="post">
 
         <div class="text-center">
-          <img class="mt-3" src="../img/marka-logo.png" style="height: 150px; width: 150px;">
+          <img class="mt-3" src="../img/logo.png" style="height: 150px; width: 150px;">
           <h1 class="h3 mb-3 font-weight-normal text-capitalize"><?php echo $type;?> Registration</h1>
           <div id="message">
               <?php echo $message;?>
@@ -40,7 +40,7 @@
             <input type="password" class="form-control" id="password2" name="password2" placeholder="Secret Password" required>
           </div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="address">Address</label>
           <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St">
         </div>
@@ -114,7 +114,7 @@
             <label for="zip">Zip</label>
             <input type="text" class="form-control" id="zip" name="zip" placeholder="123456">
           </div>
-        </div>
+        </div> -->
         <button type="submit" class="btn btn-primary" name="visitorRegister">REGISTER</button>
       </form>
     </div>
