@@ -16,7 +16,7 @@
         <input type="password" id="password" name="password" class="form-control my-2" placeholder="Password" required>
         <div class="mt-3">
           <p>
-            <a href="<?php echo $base_path;?>/usersShared/index.php?type=employee&status=register">
+            <a href="<?php echo $base_path;?>/userShared/index.php?type=employee&status=register">
             Create Account
           </a> |
           <?php
