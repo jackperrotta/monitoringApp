@@ -226,5 +226,5 @@
      </main>
    </div>
  </div>
-
+ <?php include '../view/charts.php' ?>
  <?php include '../view/employeeFooter.php' ?>
