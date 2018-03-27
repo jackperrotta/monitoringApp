@@ -8,7 +8,7 @@
     // $base_path = 'http://localhost/monitoringApp';
 
     //this is for the database
-    $dsn = 'mysql:host=monitoringapp.c6ufur3cegqo.us-west-2.rds.amazonaws.com;dbname=monitoringApp';
+    $dsn = 'mysql:host=monitoringapp.c6ufur3cegqo.us-west-2.rds.amazonaws.com;port:3306;dbname=monitoringApp';
     $username = 'admin';
     $password = 'password';
 
