@@ -13,5 +13,5 @@
     $password = 'password';
 
     //this path can be used in place of relative references in HTML
-    $base_path = 'http://54.244.209.143';
+    $base_path = 'http://35.165.118.231';
 ?>
