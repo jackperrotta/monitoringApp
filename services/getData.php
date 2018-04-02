@@ -1,22 +1,8 @@
 <?php include '../common/config.php';?>
 <?php include "../model/database.php"; ?>
+<?php include "../model/analyticsDb.php"; ?>
 
 <?php
-// $data = array(
-//   array(10,40),
-//   array(12,56),
-//   array(56,12)
-// );
-function getUsage() {
-  global $db;
-  $statement = $db->prepare(
-    'select `license-num`, `TotalCost` from LicenseData'
-  );
-  $statement->execute();
-  $data = $statement->fetchAll();
-  $statement->closeCursor();
-  return $data;
-}
 
 $data = getUsage();
 // print_r($data);

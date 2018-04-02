@@ -15,21 +15,41 @@
       console.log(data);
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
-        type: 'scatter',
-           data: {
-               datasets: [{
-                   label: 'Scatter Dataset',
-                   data: data
-               }]
+         type: 'scatter',
+         data: {
+             datasets: [{
+                 label: false,
+                 data: data
+             }]
+         },
+         options: {
+           legend: {
+             display: false
            },
-           options: {
-               scales: {
-                   xAxes: [{
-                       type: 'linear',
-                       position: 'bottom'
-                   }]
+           scales: {
+             yAxes: [
+               {
+                 scaleLabel: {
+                   display: true,
+                   labelString: 'Usage'
+                 }
                }
+             ],
+             xAxes: [
+               {
+                 scaleLabel: {
+                   display: true,
+                   labelString: 'License Total Cost'
+                 },
+                 ticks: {
+                    callback: function(value, index, values) {
+                        return '$' + value;
+                    }
+                }
+               }
+             ]
            }
+         }
        });
     }
   }
