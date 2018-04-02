@@ -226,14 +226,5 @@
      </main>
    </div>
  </div>
- <?php print_r($data);
- // for ($i=0; $i < sizeof($data); $i++) {
- //   for ($j=0; $j < sizeof($data[$i]) ; $j++) {
- //     echo $data[$i][$j] . "<br>";
- //   }
- // }
- $json = json_encode($data);
- print_r($json);
-  ?>
  <?php include '../view/charts.php' ?>
  <?php include '../view/employeeFooter.php' ?>

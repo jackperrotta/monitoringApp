@@ -15,12 +15,7 @@ if (isset($_GET['logout'])){
 if ($_SESSION['LOGGED_IN'] === 'OK') {
   $fName = $_SESSION['fName'];
   $lName = $_SESSION['lName'];
-
-  $data = array(
-    array(10,40),
-    array(12,56),
-    array(56,12)
-  );
+  
   include 'dashboard.php';
   exit();
 };
