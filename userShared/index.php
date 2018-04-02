@@ -52,10 +52,15 @@ if (isset($_POST['login']) && $type=='employee'){
     $password = filter_input(INPUT_POST,'password');
     $userId = loginUsers($email,$password, $type);
     if ($userId){
-        session_start();
-        $_SESSION['LOGGED_IN']='OK';
-        header('Location: ../employee/index.php');
-        exit();
+      $fName = $userId[0][firstName];
+      $lName = $userId[0][lastName];
+      session_start();
+      $_SESSION['LOGGED_IN']='OK';
+      $_SESSION['email'] = $email;
+      $_SESSION['fName'] = $fName;
+      $_SESSION['lName'] = $lName;
+      header('Location: ../employee/index.php');
+      exit();
     } else
     {
         $message = "<div class='alert alert-danger' role='alert'>Login failed. Please try again.</div>";
