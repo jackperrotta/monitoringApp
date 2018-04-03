@@ -11,7 +11,7 @@
                Dashboard <span class="sr-only">(current)</span>
              </a>
            </li>
-           <li class="nav-item">
+           <!-- <li class="nav-item">
              <a class="nav-link" href="#">
                <span data-feather="file"></span>
                Orders
@@ -28,7 +28,7 @@
                <span data-feather="users"></span>
                Customers
              </a>
-           </li>
+           </li> -->
            <li class="nav-item">
              <a class="nav-link" href="#">
                <span data-feather="bar-chart-2"></span>
@@ -36,7 +36,7 @@
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#">
+             <a class="nav-link" href="<?php echo $base_path ?>/employee/?downloads">
                <span data-feather="layers"></span>
                Integrations
              </a>
