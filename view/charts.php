@@ -56,3 +56,47 @@
   xmlhttp.open("GET", "../services/getData.php", true);
   xmlhttp.send();
 </script>
+
+<script type="text/javascript">
+var donut = document.getElementById("donutOne");
+var myDoughnutChart = new Chart(donut, {
+   type: 'doughnut',
+   data: {
+     datasets: [{
+         data: [10, 20, 25, 30, 50, 70]
+     }],
+
+     // These labels appear in the legend and in the tooltips when hovering different arcs
+     labels: [
+          'Lotus Notes',
+         'iMessage',
+         'Slack',
+         'Atom',
+         'Salesforce',
+         'Chrome'
+     ]
+ }
+});
+</script>
+
+<script type="text/javascript">
+var donutTwo = document.getElementById("donutTwo");
+var myDoughnutChart = new Chart(donutTwo, {
+   type: 'doughnut',
+   data: {
+     datasets: [{
+         data: [10, 20, 25, 30, 50, 70]
+     }],
+
+     // These labels appear in the legend and in the tooltips when hovering different arcs
+     labels: [
+          'Lotus Notes',
+         'iMessage',
+         'Slack',
+         'Atom',
+         'Salesforce',
+         'Chrome'
+     ]
+ }
+});
+</script>

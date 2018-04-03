@@ -19,6 +19,12 @@ if ($_SESSION['LOGGED_IN'] === 'OK' && isset($_GET['downloads'])){
   exit();
 }
 
+// Apps downloads page
+if ($_SESSION['LOGGED_IN'] === 'OK' && isset($_GET['reports'])){
+  include 'reports.php';
+  exit();
+}
+
 // If session go to Dashboard
 if ($_SESSION['LOGGED_IN'] === 'OK') {
 

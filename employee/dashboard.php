@@ -30,13 +30,13 @@
              </a>
            </li> -->
            <li class="nav-item">
-             <a class="nav-link" href="#">
+             <a class="nav-link" href="<?php echo $base_path ?>/employee/index.php?reports">
                <span data-feather="bar-chart-2"></span>
                Reports
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="<?php echo $base_path ?>/employee/?downloads">
+             <a class="nav-link" href="<?php echo $base_path ?>/employee/index.php?downloads">
                <span data-feather="layers"></span>
                Integrations
              </a>
@@ -62,12 +62,12 @@
                Last quarter
              </a>
            </li>
-           <li class="nav-item">
+           <!-- <li class="nav-item">
              <a class="nav-link" href="#">
                <span data-feather="file-text"></span>
                Social engagement
              </a>
-           </li>
+           </li> -->
            <li class="nav-item">
              <a class="nav-link" href="#">
                <span data-feather="file-text"></span>
