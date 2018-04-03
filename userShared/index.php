@@ -17,13 +17,8 @@ if (isset($_POST['login']) && $type=='visitor'){
     $userId = loginUsers($email,$password,$type);
     if ($userId){
         $id = $userId[0][id];
-        $fName = $userId[0][fName];
-        $lName = $userId[0][lName];
-        $address = $userId[0][address];
-        $address2 = $userId[0][address2];
-        $city = $userId[0][city];
-        $state = $userId[0][state];
-        $zip = $userId[0][zip];
+        $fName = $userId[0][Firstname];
+        $lName = $userId[0][Lastname];
         $groupId = $userId[0][GroupID];
         session_start();
         $_SESSION['logginIn']='OK';
@@ -52,13 +47,13 @@ if (isset($_POST['login']) && $type=='employee'){
     $password = filter_input(INPUT_POST,'password');
     $userId = loginUsers($email,$password, $type);
     if ($userId){
-      $fName = $userId[0][firstName];
-      $lName = $userId[0][lastName];
+      $fName = $userId[0][Firstname];
+      $lName = $userId[0][Lastname];
       session_start();
       $_SESSION['LOGGED_IN']='OK';
-      $_SESSION['email'] = $email;
-      $_SESSION['fName'] = $fName;
-      $_SESSION['lName'] = $lName;
+      $_SESSION['Email'] = $email;
+      $_SESSION['Firstname'] = $fName;
+      $_SESSION['Lastname'] = $lName;
       header('Location: ../employee/index.php');
       exit();
     } else

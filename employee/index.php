@@ -4,6 +4,8 @@
 <?php
 
 session_start();
+$fName = $_SESSION['Firstname'];
+$lName = $_SESSION['Lastname'];
 
 // Logout
 if (isset($_GET['logout'])){
@@ -11,11 +13,15 @@ if (isset($_GET['logout'])){
     exit();
 }
 
+// Apps downloads page
+if ($_SESSION['LOGGED_IN'] === 'OK' && isset($_GET['downloads'])){
+  include 'apps.php';
+  exit();
+}
+
 // If session go to Dashboard
 if ($_SESSION['LOGGED_IN'] === 'OK') {
-  $fName = $_SESSION['fName'];
-  $lName = $_SESSION['lName'];
-  
+
   include 'dashboard.php';
   exit();
 };

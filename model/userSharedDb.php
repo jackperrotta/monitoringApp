@@ -7,8 +7,8 @@ function addVisitor($fName, $lName, $email, $password, $type){
   );
   $statement->bindValue(':email', $email);
   $statement->bindValue(':password', $password);
-  $statement->bindValue(':fName', $fName);
-  $statement->bindValue(':lName', $lName);
+  $statement->bindValue(':Firstname', $fName);
+  $statement->bindValue(':Lastname', $lName);
   $statement->bindValue(':accountType', $type);
   $result = $statement->execute();
   $statement->closeCursor();
