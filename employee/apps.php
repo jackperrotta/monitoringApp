@@ -2,7 +2,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Employee Downloads</h1>
-    <p class="lead">Please utlize the free software downloads here so we maintain license compliance and a secure network.</p>
+    <p class="lead">Please utilize the free software downloads here so we maintain license compliance and a secure network.</p>
   </div>
 </div>
 <div class="container">
