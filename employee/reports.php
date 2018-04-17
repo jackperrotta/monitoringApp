@@ -119,9 +119,9 @@
 </div>
 </div>
 
-       <canvas class="my-4" id="donutOne" width="900" height="380"></canvas>
+       <!-- <canvas class="my-4" id="donutOne" width="900" height="380"></canvas>
        <br>
-       <canvas class="my-4" id="donutTwo" width="900" height="380"></canvas>
+       <canvas class="my-4" id="donutTwo" width="900" height="380"></canvas> -->
      </main>
    </div>
  </div>
