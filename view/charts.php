@@ -17,12 +17,24 @@
       var myChart = new Chart(ctx, {
          type: 'scatter',
          data: {
-             datasets: [{
-                 label: false,
-                 data: data
-             }]
+           labels: ["Slack", "IBM Lotus Notes", "Tableau", "Azure", "Box - Cloud Storage", "Office 365", "Hootsuite", "WordPress", "Salesforce"],
+           datasets: [{
+             label: 'Legend',
+              data: data,
+              pointBackgroundColor: ["rgba(63,191,63,1)", "rgba(191,63,63,1)", "rgba(191,127,63,1)", "rgba(191,127,63,1)", "rgba(63,191,63,1)", "rgba(191,127,63,1)", "rgba(191,191,63,1)", "rgba(63,191,63,1)", "rgba(191,191,63,1)"],
+              radius: 6,
+              borderWidth: 3
+           }]
          },
          options: {
+           tooltips: {
+         callbacks: {
+            label: function(tooltipItem, data) {
+               var label = data.labels[tooltipItem.index];
+               return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+            }
+         }
+      },
            legend: {
              display: false
            },
@@ -31,7 +43,8 @@
                {
                  scaleLabel: {
                    display: true,
-                   labelString: 'Usage'
+                   labelString: 'Usage',
+                   fontSize: 14
                  }
                }
              ],
@@ -39,7 +52,8 @@
                {
                  scaleLabel: {
                    display: true,
-                   labelString: 'License Total Cost'
+                   labelString: 'License Total Cost',
+                   fontSize: 14
                  },
                  ticks: {
                     callback: function(value, index, values) {
