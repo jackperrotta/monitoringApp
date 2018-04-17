@@ -3,6 +3,8 @@
 
 <?php
 
+$utilize = filter_input(INPUT_GET,'utilize');
+
 session_start();
 $fName = $_SESSION['Firstname'];
 $lName = $_SESSION['Lastname'];
@@ -25,6 +27,11 @@ if ($_SESSION['LOGGED_IN'] === 'OK' && isset($_GET['reports'])){
   exit();
 }
 
+// If utilize is set show table
+if (isset($_GET['utilize'])){
+  include 'utilize.php';
+  exit();
+}
 // If session go to Dashboard
 if ($_SESSION['LOGGED_IN'] === 'OK') {
 

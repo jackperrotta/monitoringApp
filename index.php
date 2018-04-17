@@ -17,7 +17,7 @@
 <div id="about" class="container my-5">
   <div class="row">
     <div class="col-md-7">
-      <h2>About Our Monitoring App</h2>
+      <h2>License Key Sentry</h2>
       <p class="lead">Our application will monitor the usage of software licenses. The
 application will list all licenses that a company has purchased and that the company’s devices are
 running. The application will have the ability to add or remove licenses from a company device. The

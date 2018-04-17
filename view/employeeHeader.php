@@ -7,7 +7,7 @@
   <meta name="author" content="">
   <link rel="icon" href="<?php echo $base_path;?>/img/logo.png">
 
-  <title>Monitoring App</title>
+  <title>License Key Sentry</title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo $base_path;?>/styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">

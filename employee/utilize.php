@@ -6,7 +6,7 @@
        <div class="sidebar-sticky">
          <ul class="nav flex-column">
            <li class="nav-item">
-             <a class="nav-link active" href="#">
+             <a class="nav-link active" href="<?php echo $base_path ?>/employee/index.php">
                <span data-feather="home"></span>
                Dashboard <span class="sr-only">(current)</span>
              </a>
@@ -62,12 +62,12 @@
                Last quarter
              </a>
            </li>
-           <!-- <li class="nav-item">
+           <li class="nav-item">
              <a class="nav-link" href="#">
                <span data-feather="file-text"></span>
                Social engagement
              </a>
-           </li> -->
+           </li>
            <li class="nav-item">
              <a class="nav-link" href="#">
                <span data-feather="file-text"></span>
@@ -80,7 +80,7 @@
 
      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-         <h1 class="h2">Dashboard</h1>
+        <h2>Salesforce Utilization Metrics</h2>
          <div class="btn-toolbar mb-2 mb-md-0">
            <div class="btn-group mr-2">
              <button class="btn btn-sm btn-outline-secondary">Share</button>
@@ -93,68 +93,52 @@
          </div>
        </div>
 
-       <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
 
-       <h2>Utilization Metrics</h2>
        <div class="table-responsive">
-         <table class="table table-striped">
+         <table class="table table-striped table-sm">
            <thead>
              <tr>
-               <th>Application Name</th>
-               <th>Total Cost</th>
-               <th>License Number</th>
-               <th>Daily Active Users</th>
+               <th>User</th>
+               <th>Total Cost</t>
+               <th>Daily Utilization</th>
                <th>Monthly Utilization</th>
                <th>Monthly Waste</th>
-               <!-- <th>Projected Yearly Waste</th> -->
+               <th>Projected Yearly Waste</th>
              </tr>
            </thead>
            <tbody>
              <tr>
-               <td><a href="#">Tableau</a></td>
-               <td>$3,000.00</td>
-               <td>3</td>
-               <td>100.00%</td>
-               <td>$0.00</td>
-               <td>$0.00</td>
-             </tr>
-             <tr>
-             <td><a href="<?php echo $base_path ?>/employee/index.php?utilize">Salesforce</a></td>
+               <td>tuf09656</td>
                <td>$2,000.00</td>
-               <td>3</td>
-               <td>66.66%</td>
-               <td>$111.11</td>
-               <td>$1333.33</td>
-             </tr>
-             <tr>
-               <td><a href="#">Box - Cloud Storage</a></td>
-               <td>$200.00</td>
-               <td>2</td>
+               <td>100.00%</td>
                <td>100.00%</td>
                <td>$0.00</td>
                <td>$0.00</td>
              </tr>
              <tr>
-               <td><a href="#">IBM Lotus Notes</a></td>
-               <td>$3,000.00</td>
-               <td>4</td>
-               <td>25.00%</td>
-               <td>$187.50</td>
-               <td>$2,250.00</td>
+             <td>tuf10327</td>
+               <td>$2,000.00</td>
+               <td>100.00%</td>
+               <td>100.00%</td>
+               <td>$0.00</td>
+               <td>$0.00</td>
              </tr>
              <tr>
-               <td><a href="#">Slack</a></td>
-               <td>$100.00</td>
-               <td>3</td>
-               <td>66.66%</td>
-               <td>$2.77</td>
-               <td>$33.33</td>
+               <td>tug34937</td>
+               <td>$2,000.00</td>
+               <td>0.00%</td>
+               <td>0.00%</td>
+               <td>$166.66</td>
+               <td>$2,000.00</td>
              </tr>
+
+
            </tbody>
          </table>
-       </div>
+
+           <h5><a href="../img/Salesforce.csv" download>Export CSV</a></h5>
      </main>
    </div>
  </div>
- <?php include '../view/charts.php' ?>
- <?php include '../view/employeeFooter.php' ?>
+ <?php include '../view/charts.php'; ?>
+ <?php include '../view/employeeFooter.php'; ?>

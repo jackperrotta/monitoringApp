@@ -120,7 +120,7 @@ var ctx1 = document.getElementById("myChart1");
 var stackedBar1 = new Chart(ctx1, {
   type: 'bar',
   data: {
-        labels: ['03-01', '03-02', '03-03', '03-04', '03-05', '03-06', '03-07'],
+        labels: ['04-16', '04-17', '04-18', '04-19', '04-20', '04-21', '04-22'],
         datasets: [{
           // unutilizaed time loop
         label: 'unutilizaed',
@@ -169,7 +169,7 @@ var ctx2 = document.getElementById("myChart2");
 var stackedBar2 = new Chart(ctx2, {
   type: 'line',
   data: {
-        labels: ['03-01', '03-02', '03-03', '03-04', '03-05', '03-06', '03-07'],
+        labels: ['04-16', '04-17', '04-18', '04-19', '04-20', '04-21', '04-22'],
         datasets: [{
           // sales loop
         label: 'Sales',
@@ -219,7 +219,7 @@ var stackedBar3 = new Chart(ctx3, {
   type: 'bar',
   data: {
   //date loop
-        labels: ['03-01', '03-02', '03-03', '03-04', '03-05', '03-06', '03-07'],
+        labels: ['04-16', '04-17', '04-18', '04-19', '04-20', '04-21', '04-22'],
         datasets: [{
           // # of new customer loop
         label: 'New Customer',
