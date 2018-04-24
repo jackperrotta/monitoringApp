@@ -8,5 +8,5 @@
     $password = 'password';
 
     //this path can be used in place of relative references in HTML
-    $base_path = 'http://34.210.71.221';
+    $base_path = 'http://licensekeysentry.com';
 ?>
