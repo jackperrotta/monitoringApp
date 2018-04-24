@@ -120,10 +120,10 @@ var ctx1 = document.getElementById("myChart1");
 var stackedBar1 = new Chart(ctx1, {
   type: 'bar',
   data: {
-        labels: ['04-16', '04-17', '04-18', '04-19', '04-20', '04-21', '04-22'],
+        labels: ['04-21', '04-22', '04-23', '04-24', '04-25', '04-26', '04-27'],
         datasets: [{
           // unutilizaed time loop
-        label: 'unutilizaed',
+        label: 'unutilized',
         data: [3, 3, 3, 3, 5, 6, 8],
       backgroundColor: [
               'rgba(54, 162, 235, 0.2)',
@@ -169,10 +169,10 @@ var ctx2 = document.getElementById("myChart2");
 var stackedBar2 = new Chart(ctx2, {
   type: 'line',
   data: {
-        labels: ['04-16', '04-17', '04-18', '04-19', '04-20', '04-21', '04-22'],
+        labels: ['04-21', '04-22', '04-23', '04-24', '04-25', '04-26', '04-27'],
         datasets: [{
           // sales loop
-        label: 'Sales',
+        label: 'Work Hours',
         data: [131, 231,167,98, 368,157,198],
         borderColor:  'rgb(237, 113, 191)',
         pointBackgroundColor  :'rgb(237, 113, 191)',
@@ -183,7 +183,7 @@ var stackedBar2 = new Chart(ctx2, {
       },
      {
           // average sales loop
-        label: 'Average Sales',
+        label: 'Application Usage',
         data: [77, 98, 57, 37, 87, 68, 77, 58],
         borderColor:  'rgb(140, 247, 174)',
         pointBackgroundColor  :'rgb(140, 247, 174)',
@@ -194,7 +194,7 @@ var stackedBar2 = new Chart(ctx2, {
         },
         {
           // Number of order loop
-        label: 'Orders',
+        label: 'New Downloads',
         data: [5, 8, 6, 4, 13, 7, 6, 6],
         borderColor:  'rgb(40, 47, 74)',
         pointBackgroundColor  :'rgb(40, 47, 74)',
@@ -222,7 +222,7 @@ var stackedBar3 = new Chart(ctx3, {
         labels: ['04-16', '04-17', '04-18', '04-19', '04-20', '04-21', '04-22'],
         datasets: [{
           // # of new customer loop
-        label: 'New Customer',
+        label: 'New Application Usage',
         data: [1, 2, 3, 3, 2, 4, 5],
       backgroundColor: [
               'rgba(54, 162, 235, 0.2)',
@@ -238,7 +238,7 @@ var stackedBar3 = new Chart(ctx3, {
     borderColor: 'rgb(79, 89, 107)'
   }, {
           // # of return customer loop
-        label: 'Return Customer',
+        label: 'Returning Application Usage',
         data: [3, 4, 5, 5, 3, 5, 5, 6],
         backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
@@ -270,9 +270,9 @@ var myChart = new Chart(ctx4, {
   type: 'bar',
   data: {
     // product loop
-      labels: ["screen", "earphone", "case", "charge", "cable", "accessories"],
+      labels: ["Lotus Notes", "iMessage", "Slack", "Atom", "Salesforce", "Chrome"],
       datasets: [{
-          label: 'Cost',
+          label: 'unutilizied',
           // purchased price Loop
           data: [35, 33, 21, 18, 15, 10],
           backgroundColor: [
@@ -292,7 +292,7 @@ var myChart = new Chart(ctx4, {
               'rgba(255,99,132,1)'
           ],
           borderWidth: 2,},
-      { label:'Price',
+      { label:'utilized',
       data: [54, 53 ,34, 37, 33, 24],
           backgroundColor: [
               'rgba(54, 162, 235, 0.2)',
@@ -311,7 +311,7 @@ var myChart = new Chart(ctx4, {
               'rgba(54, 162, 235, 1)'
           ],
            borderWidth:2,},
-          {label: 'Profit',
+          {label: 'Usage',
           // # of order Loop
           data: [83, 78, 67, 98, 144, 68],
            borderColor:  'rgb(105,105,105)',
@@ -343,7 +343,7 @@ var myChart5 = new Chart(ctx5, {
   type: 'doughnut',
   data: {
     // name of service Loop
-      labels: ["repair", "fix", "repairme", "fixme","hello","hi","nihao"],
+      labels: ["Lotus Notes", "iMessage", "Slack", "Atom", "Salesforce", "Chrome"],
       datasets: [{
           label: '# of Votes',
           // sales of service Loop
@@ -401,7 +401,7 @@ var stackedBar7 = new Chart(ctx7, {
         labels: ['12am', '3', '6', '9', '12pm', '3', '6','9'],
         datasets: [{
           // unutilizaed time loop
-        label: 'AVG Sales',
+        label: 'Work Hours',
         data: [0, 0, 0, 0, 5, 8, 6,0],
       backgroundColor: [
               'rgba(54, 162, 235, 0.2)',
@@ -431,9 +431,9 @@ var myChart8 = new Chart(ctx8, {
     // Day of week Loop
       labels: ["Mon", "Tues", "Wed", "Thur", "Fri", "Sat", "Sun"],
       datasets: [{
-          label: '# of Votes',
+          label: 'Application Usage per Day',
           // Number of Order Loop
-          data: [3, 3, 2, 3, 5, 6, 8],
+          data: [3, 6, 5, 7, 2, 2, 1],
         borderColor:  'rgb(237, 113, 191)',
         pointBackgroundColor  :'rgb(237, 113, 191)',
         pointRadius: 5,

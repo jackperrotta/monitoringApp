@@ -93,30 +93,35 @@
          </div>
        </div>
        <div class="container">
-<div class="column">
-  <canvas id="myChart1" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart2" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart3" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart4" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart5" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart6" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart7" width="300" height="200"></canvas>
-</div>
-<div class="column">
-  <canvas id="myChart8" width="300" height="200"></canvas>
-</div>
+         <div class="row mb-3">
+           <div class="col-lg-6">
+             <canvas id="myChart1" width="300" height="200"></canvas>
+           </div>
+           <div class="col-lg-6">
+             <canvas id="myChart2" width="300" height="200"></canvas>
+           </div>
+         </div>
+         <div class="row mb-3">
+           <div class="col-lg-6">
+             <canvas id="myChart4" width="300" height="200"></canvas>
+           </div>
+           <div class="col-lg-6">
+             <canvas id="myChart5" width="300" height="200"></canvas>
+           </div>
+         </div>
+         <div class="row mb-3">
+           <div class="col-lg-6">
+             <canvas id="myChart7" width="300" height="200"></canvas>
+           </div>
+           <div class="col-lg-6">
+             <canvas id="myChart3" width="300" height="200"></canvas>
+           </div>
+         </div>
+         <div class="row mb-3">
+           <div class="col-lg-12">
+             <canvas id="myChart8" width="300" height="200"></canvas>
+           </div>
+         </div>
 </div>
 
        <!-- <canvas class="my-4" id="donutOne" width="900" height="380"></canvas>
